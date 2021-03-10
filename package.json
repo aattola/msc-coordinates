@@ -4,6 +4,33 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "memoryjs": "^3.4.0"
+    "memoryjs": "^3.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "leaflet": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "react-leaflet": "^3.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-prettier-standard": "^3.0.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "start": "parcel web/index.html"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
   }
 }
