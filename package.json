@@ -1,5 +1,18 @@
 {
-  "name": "mscMAP",
+  "name": "msckartta",
+  "description": "Kartta sijainnin näyttää",
+  "author": {
+    "name": "JEFFe",
+    "email": "jeffe@jeffe.co"
+  },
+  "build": {
+    "productName": "MSC Kartta",
+    "copyright": "Copyright © 2021 JEFFe",
+    "appId": "com.jeffe.msc-kartta"
+  },
+  "win": {
+    "target": "nsis-web"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -15,6 +28,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-prettier-standard": "^3.0.1",
@@ -28,12 +43,13 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-plugin-standard": "^4.0.1",
-    "parcel-bundler": "^1.12.4",
-    "electron": "^12.0.1"
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
     "start": "parcel web/index.html",
-    "app": "electron ./app/main.js"
+    "app": "electron ./app/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --project ./app"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"

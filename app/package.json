@@ -1,0 +1,30 @@
+{
+  "name": "msckartta",
+  "description": "Kartta sijainnin näyttää",
+  "author": {
+    "name": "JEFFe",
+    "email": "jeffe@jeffe.co"
+  },
+  "build": {
+    "productName": "MSC Kartta",
+    "copyright": "Copyright © 2021 JEFFe",
+    "appId": "com.jeffe.msc-kartta",
+    "files": [
+      "dist/**/*",
+      "package.json",
+      "main.js"
+    ]
+  },
+  "win": {
+    "target": "nsis-web"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "memoryjs": "^3.4.0",
+    "socket.io-client": "^4.0.0"
+  }
+}
